@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YoHackMobileApp.regStartup">
+    <ContentPage.Content>
+    <StackLayout>
+        <Label
+            Text="Регистрация"
+            FontSize="Large"
+            VerticalOptions="Center"
+            HorizontalOptions="Start"
+            Padding="50"
+           />
+        <Entry
+            Placeholder="Логин"
+            />
+        <Entry
+            Placeholder="Пароль"
+            />
+        <Entry
+            Placeholder="Имя"
+            />
+        <Entry
+            Placeholder="Фамилия"
+            />
+        <Picker
+            Title="Области"
+            />
+        <Button
+            Text="Сохранить"
+            Clicked="Save"
+            />
+        
+    </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

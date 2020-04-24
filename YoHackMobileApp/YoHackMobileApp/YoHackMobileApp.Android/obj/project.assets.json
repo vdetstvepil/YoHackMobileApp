@@ -1932,39 +1932,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Anton\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "/Users/danielkhromov/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\YoHackMobileApp\\YoHackMobileApp\\YoHackMobileApp\\YoHackMobileApp.Android\\YoHackMobileApp.Android.csproj",
+      "projectUniqueName": "/Users/danielkhromov/Desktop/YoHackMobileApp/YoHackMobileApp/YoHackMobileApp/YoHackMobileApp.Android/YoHackMobileApp.Android.csproj",
       "projectName": "YoHackMobileApp.Android",
-      "projectPath": "D:\\YoHackMobileApp\\YoHackMobileApp\\YoHackMobileApp\\YoHackMobileApp.Android\\YoHackMobileApp.Android.csproj",
-      "packagesPath": "C:\\Users\\Anton\\.nuget\\packages\\",
-      "outputPath": "D:\\YoHackMobileApp\\YoHackMobileApp\\YoHackMobileApp\\YoHackMobileApp.Android\\obj\\",
+      "projectPath": "/Users/danielkhromov/Desktop/YoHackMobileApp/YoHackMobileApp/YoHackMobileApp/YoHackMobileApp.Android/YoHackMobileApp.Android.csproj",
+      "packagesPath": "/Users/danielkhromov/.nuget/packages/",
+      "outputPath": "/Users/danielkhromov/Desktop/YoHackMobileApp/YoHackMobileApp/YoHackMobileApp/YoHackMobileApp.Android/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Anton\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "/Users/danielkhromov/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "monoandroid90"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "D:\\YoHackMobileApp\\YoHackMobileApp\\YoHackMobileApp\\YoHackMobileApp\\YoHackMobileApp.csproj": {
-              "projectPath": "D:\\YoHackMobileApp\\YoHackMobileApp\\YoHackMobileApp\\YoHackMobileApp\\YoHackMobileApp.csproj"
+            "/Users/danielkhromov/Desktop/YoHackMobileApp/YoHackMobileApp/YoHackMobileApp/YoHackMobileApp/YoHackMobileApp.csproj": {
+              "projectPath": "/Users/danielkhromov/Desktop/YoHackMobileApp/YoHackMobileApp/YoHackMobileApp/YoHackMobileApp/YoHackMobileApp.csproj"
             }
           }
         }

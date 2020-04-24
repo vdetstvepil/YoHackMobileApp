@@ -15,7 +15,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
@@ -89,7 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\YoHackMobileApp\YoHackMobileApp.csproj">
-      <Project>{1021AB38-4E22-4525-AF22-E4A84F4D0974}</Project>
+      <Project>{FB01AC76-C9DB-44D8-ACDE-F7EC8327691B}</Project>
       <Name>YoHackMobileApp</Name>
     </ProjectReference>
   </ItemGroup>
