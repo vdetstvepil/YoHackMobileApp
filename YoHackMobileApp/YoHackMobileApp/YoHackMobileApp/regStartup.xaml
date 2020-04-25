@@ -16,18 +16,21 @@
         <Entry
             Placeholder="Логин"
             Margin="20"
+           x:Name="login"
             />
         <Entry
             Placeholder="Пароль"
             Margin="20"
             IsPassword="True"
+            x:Name="pass"
             />
         <Entry
             Placeholder="Название стартапа"
             Margin="20"
+            x:Name="name"
             />
         <Picker
-            Title="Стадия" Margin="20">
+            Title="Стадия" Margin="20" x:Name="stage">
             <Picker.ItemsSource>
             <x:Array Type="{x:Type x:String}">
             <x:String>Идея</x:String>
@@ -39,14 +42,17 @@
         <Editor
             Placeholder="Краткое описание"
             Margin="20"
+            x:Name="description"
             />
           <Picker
-            Title="Области" Margin="20">
+            Title="Области" Margin="20" x:Name="tag">
             <Picker.ItemsSource>
             <x:Array Type="{x:Type x:String}">
-            <x:String>UI</x:String>
             <x:String>UX</x:String>
-            <x:String>Бизнес</x:String>
+            <x:String>UI</x:String>
+            <x:String>Business</x:String>
+            <x:String>IT</x:String>
+            <x:String>Экология</x:String>
             </x:Array>
             </Picker.ItemsSource>
             </Picker>
@@ -59,7 +65,7 @@
             Clicked="Next"
             BackgroundColor="Blue"
             Margin="30"
-            />  
+            />
         </StackLayout>
         </ScrollView>
     </ContentPage.Content>

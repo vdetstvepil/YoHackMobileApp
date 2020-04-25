@@ -26,6 +26,7 @@
     <MtouchArch>x86_64</MtouchArch>
     <MtouchLink>None</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
+    <MtouchI18n>west</MtouchI18n>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -128,7 +129,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\YoHackMobileApp\YoHackMobileApp.csproj">
-      <Project>{1021AB38-4E22-4525-AF22-E4A84F4D0974}</Project>
+      <Project>{FB01AC76-C9DB-44D8-ACDE-F7EC8327691B}</Project>
       <Name>YoHackMobileApp</Name>
     </ProjectReference>
   </ItemGroup>

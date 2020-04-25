@@ -17,6 +17,7 @@
            />
         <Label
             Text="Кто вы?"
+            BackgroundColor="DarkBlue"
             HorizontalOptions="Center"
             VerticalOptions="Center"
             FontSize="Large"
