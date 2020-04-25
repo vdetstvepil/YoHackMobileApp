@@ -15,5 +15,9 @@ namespace YoHackMobileApp
         {
             await Navigation.PushAsync(new investorHome());
         }
+        async void AddMore(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new addMoreStartups());
+        }
     }
 }

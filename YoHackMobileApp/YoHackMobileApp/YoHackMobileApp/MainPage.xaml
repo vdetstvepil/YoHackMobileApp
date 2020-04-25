@@ -10,7 +10,7 @@
         <!-- Place new controls here -->
         
         <Label Text="K I K O R I K I"
-            Padding="60"
+           Padding="60"
            HorizontalOptions="Center"
            VerticalOptions="Center"
            FontSize="Title"
@@ -18,12 +18,16 @@
         <Label
             Text="Кто вы?"
             HorizontalOptions="Center"
-            VerticalOptions="Center"/>
+            VerticalOptions="Center"
+            FontSize="Large"
+            TextColor="Gray"/>
         <Button
+            Margin="0,50,0,0"
             Text="Инвестор"
             HorizontalOptions="Center"
             VerticalOptions="Center"
-            Clicked="Investor"/>
+            Clicked="Investor"
+            />
         <Button
             Text="Стартапер"
             HorizontalOptions="Center"

@@ -10,26 +10,37 @@
             VerticalOptions="Center"
             HorizontalOptions="Start"
             Padding="50"
+            FontAttributes="Bold"
            />
         <Entry
             Placeholder="Логин"
+            Margin="20"
             />
         <Entry
             Placeholder="Пароль"
+            Margin="20"
             />
         <Entry
             Placeholder="Имя"
+            Margin="20"
             />
         <Entry
             Placeholder="Фамилия"
+            Margin="20"
             />
         <Picker
             Title="Области"
+            Margin="20"
             />
         <Button
+            Text="Добавить стартапы, в которые вы уже инвестировали" TextColor="Gray" Clicked="AddMore"/>
+     <Button
             Text="Сохранить"
+            TextColor="White"
             Clicked="Save"
-            />
+            BackgroundColor="Blue"
+            Margin="30"
+            />  
         
     </StackLayout>
     </ContentPage.Content>

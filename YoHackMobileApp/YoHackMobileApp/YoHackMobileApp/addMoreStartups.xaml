@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YoHackMobileApp.addMoreStartups">
+    <ContentPage.Content>
+        <StackLayout>
+           <SearchBar Placeholder="Поиск стартапов" Margin="50"/>
+            <ListView>
+
+            </ListView>
+            <Button
+                Text="Закрыть"
+                BackgroundColor="Gray"
+                TextColor="White"
+                Clicked="Close"
+                Margin="50"
+                />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

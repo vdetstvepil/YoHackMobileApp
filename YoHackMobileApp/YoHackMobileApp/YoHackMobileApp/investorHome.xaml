@@ -7,14 +7,13 @@
         <ContentPage.Content>
         <StackLayout>
         
-    <SearchBar Placeholder="Поиск стартаперов"
+    <SearchBar Placeholder="Поиск стартапов"
                HorizontalOptions="Center"
                VerticalOptions="Center"/>
     <Button
         Text="Добавить фильтры"
         HorizontalOptions="Center"
         VerticalOptions="Center"/>
-
     <ListView >
         
     </ListView>
@@ -25,12 +24,20 @@
                     
     <ContentPage Title="Раунды">
         <StackLayout>
-            <Label Text="Ваши раунды" Padding="50" FontSize="Title" HorizontalOptions="Center"/>
+            <Label Text="Ваши раунды" Padding="50" FontSize="Title" HorizontalOptions="Center" FontAttributes="Bold"/>
+            <ListView>
+
+            </ListView>
             <Button
                 Text="+ Добавить раунд"
                 FontSize="Medium"
                 VerticalOptions="End"
-                Clicked="InvestorRound"/>
+                Clicked="InvestorRound"
+                BackgroundColor="Blue"
+                TextColor="White"
+                Padding="10"
+                Margin="30"/>
+
         </StackLayout>
    </ContentPage>
 
@@ -40,7 +47,8 @@
             <Label Text="Интересные стартапы"
                    Padding="50"
                    FontSize="Title"
-                   HorizontalOptions="Center"/>
+                   HorizontalOptions="Center"
+                   FontAttributes="Bold"/>
         <ListView >
             
         </ListView>
@@ -54,9 +62,11 @@
         <StackLayout>
             <Label
                 Text="Чат"
+                FontAttributes="Bold"
                 Padding="50"
                 FontSize="Title"
-                HorizontalOptions="Start"/>
+                HorizontalOptions="Start"
+                />
 
         </StackLayout>
       </ContentPage.Content>
