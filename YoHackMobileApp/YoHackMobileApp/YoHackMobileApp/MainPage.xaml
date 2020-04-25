@@ -10,13 +10,11 @@
         <!-- Place new controls here -->
         
         <Label Text="K I K O R I K I"
-        Padding="60"
+            Padding="60"
            HorizontalOptions="Center"
            VerticalOptions="Center"
            FontSize="Title"
            />
-        <Image
-            Source="Assets/question.jpg"/>
         <Label
             Text="Кто вы?"
             HorizontalOptions="Center"
@@ -25,11 +23,12 @@
             Text="Инвестор"
             HorizontalOptions="Center"
             VerticalOptions="Center"
-            Clicked="Btn_clicked"/>
+            Clicked="Investor"/>
         <Button
             Text="Стартапер"
             HorizontalOptions="Center"
-            VerticalOptions="Center"/>
+            VerticalOptions="Center"
+            Clicked="Startup"/>
     </StackLayout>
 
 </ContentPage>
