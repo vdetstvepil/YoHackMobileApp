@@ -4,11 +4,24 @@
              x:Class="YoHackMobileApp.startupInfo">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Название стартапа" FontSize="Title" FontAttributes="Bold" HorizontalOptions="Start"/>
-            <Label Text="Активные инвесторы" FontSize="Medium" HorizontalOptions="Start"/>
-            <Label Text="Описание" FontSize="Medium" HorizontalOptions="Start"/>
-            <Button Text="Заявка" BackgroundColor="Gray" TextColor="White"/>
-            <Button Text="Закрыть" TextColor="Red"/>
+            <Label Text="Название стартапа"
+                   Margin="50"
+                   FontSize="Title"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Start"/>
+            <Label Text="Активные инвесторы"
+                   Margin="20"
+                   FontSize="Medium" HorizontalOptions="Start"/>
+            <Label Text="Описание"
+                   FontSize="Medium"
+                   HorizontalOptions="Start"
+                   Margin="20"/>
+            <Button Text="Заявка"
+                    Margin="30"
+                    BackgroundColor="Gray"
+                    TextColor="White"/>
+            <Button Text="Закрыть"
+                    TextColor="Red"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

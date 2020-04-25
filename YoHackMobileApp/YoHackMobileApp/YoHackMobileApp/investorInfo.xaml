@@ -4,11 +4,23 @@
              x:Class="YoHackMobileApp.investorInfo">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Имя"/>
-            <Label Text="Фамилия"/>
-            <Label Text="Информация"/>
-            <Button Text="Подать заявку"/>
-            <Button Text="Отмена"/>
+            <Label Text="Имя"
+                   FontSize="Title"
+                   FontAttributes="Bold"
+                   Margin="20,70,0,0"/>
+            <Label Text="Фамилия"
+                   FontSize="Title"
+                   FontAttributes="Bold"
+                   Margin="20,20,0,0"/>
+            <Label Text="Информация"
+                   Margin="25,50,0,0"/>
+            <Button Text="Подать заявку"
+                    Margin="20,400,20,0"
+                    BackgroundColor="Blue"
+                    TextColor="White"
+                    />
+            <Button Text="Отмена"
+                    TextColor="Red"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
