@@ -21,6 +21,7 @@
             Placeholder="Логин"
             Margin="20"
             x:Name="login"
+            
             />
         <Entry
             Placeholder="Пароль"
@@ -39,13 +40,30 @@
             x:Name="surname"
             />
         <Picker
-            Title="Области"
-            Margin="20"
-            x:Name="tag"
-            />
+            Title="Сферы" Margin="20" x:Name="tag">
+            <Picker.ItemsSource>
+            <x:Array Type="{x:Type x:String}">
+            <x:String>UX</x:String>
+            <x:String>UI</x:String>
+            <x:String>Business</x:String>
+            <x:String>IT</x:String>
+            <x:String>Экология</x:String>
+            </x:Array>
+            </Picker.ItemsSource>
+            </Picker>
+         <Picker
+            Title="Стадия стартапа" Margin="20" x:Name="stage">
+            <Picker.ItemsSource>
+            <x:Array Type="{x:Type x:String}">
+            <x:String>Идея</x:String>
+            <x:String>MVP</x:String>
+            <x:String>Первые продажи</x:String>
+            </x:Array>
+            </Picker.ItemsSource>
+            </Picker>
         <Button
             Text="Добавить стартапы, в которые вы уже инвестировали" TextColor="Gray" Clicked="AddMore"/>
-     <Button
+        <Button
             Text="Сохранить"
             TextColor="White"
             Clicked="Save"
