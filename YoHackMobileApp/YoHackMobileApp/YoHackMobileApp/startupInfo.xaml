@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YoHackMobileApp.startupInfo">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Название стартапа" FontSize="Title" FontAttributes="Bold" HorizontalOptions="Start"/>
+            <Label Text="Активные инвесторы" FontSize="Medium" HorizontalOptions="Start"/>
+            <Label Text="Описание" FontSize="Medium" HorizontalOptions="Start"/>
+            <Button Text="Заявка" BackgroundColor="Gray" TextColor="White"/>
+            <Button Text="Закрыть" TextColor="Red"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

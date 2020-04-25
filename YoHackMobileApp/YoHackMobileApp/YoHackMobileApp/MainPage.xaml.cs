@@ -17,9 +17,14 @@ namespace YoHackMobileApp
         {
             InitializeComponent();
         }
-        async void Btn_clicked(object sender, EventArgs e)
+        async void Investor(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new regInvestor());
         }
+        async void Startup(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new regStartup());
+        }
+
     }
 }
