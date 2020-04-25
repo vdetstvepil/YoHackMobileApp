@@ -5,6 +5,7 @@ using Xamarin.Forms;
 
 namespace YoHackMobileApp
 {
+
     public partial class regInvestor : ContentPage
     {
         public regInvestor()
@@ -12,7 +13,7 @@ namespace YoHackMobileApp
             InitializeComponent();
         }
         async void Save(object sender, EventArgs e)
-        {
+        { 
             await Navigation.PushAsync(new investorHome());
         }
         async void AddMore(object sender, EventArgs e)

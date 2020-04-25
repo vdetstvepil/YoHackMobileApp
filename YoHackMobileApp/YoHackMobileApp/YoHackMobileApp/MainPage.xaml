@@ -33,6 +33,19 @@
             HorizontalOptions="Center"
             VerticalOptions="Center"
             Clicked="Startup"/>
+        <Label Text="Есть аккаунт? Войдите"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               TextColor="Gray"/>
+        <Entry Placeholder="Логин" Margin="20"/>
+        <Entry Placeholder="Пароль" IsPassword="True" Margin="20"/>
+           <Button
+            Text="Сохранить"
+            TextColor="White"
+            BackgroundColor="Blue"
+            Margin="30"
+            />
+
     </StackLayout>
 
 </ContentPage>

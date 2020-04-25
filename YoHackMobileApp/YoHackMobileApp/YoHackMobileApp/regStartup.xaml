@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="YoHackMobileApp.regStartup">
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout>
             <Label
             Text="Регистрация"
@@ -19,6 +20,7 @@
         <Entry
             Placeholder="Пароль"
             Margin="20"
+            IsPassword="True"
             />
         <Entry
             Placeholder="Название стартапа"
@@ -50,7 +52,7 @@
             </Picker>
         <Button Text="Добавить файлы" Margin="20" />
         <Button
-            Text="Добавить стартапы, в которые вы уже инвестировали" TextColor="Gray" Clicked="Add"/>
+            Text="Добавить существующих инвесторов" TextColor="Gray" Clicked="Add"/>
         <Button
             Text="Сохранить"
             TextColor="White"
@@ -58,7 +60,7 @@
             BackgroundColor="Blue"
             Margin="30"
             />  
-        
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

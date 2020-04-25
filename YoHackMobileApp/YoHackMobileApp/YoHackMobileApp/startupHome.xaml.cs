@@ -16,5 +16,9 @@ namespace YoHackMobileApp
         {
             InitializeComponent();
         }
+        async void round(object sender, EventArgs args)
+        {
+            await Navigation.PushModalAsync(new StartupRound());
+        }
     }
 }

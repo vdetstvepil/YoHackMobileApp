@@ -14,6 +14,7 @@ namespace YoHackMobileApp
     {
         public investorHome()
         {
+            Navigation.NavigationStack.ToList().Clear();
             InitializeComponent();
         }
         async void InvestorRound(object sender, EventArgs e)
@@ -24,6 +25,17 @@ namespace YoHackMobileApp
         protected override bool OnBackButtonPressed()
         {
             return true;
+        }
+        public void ResetNavigationStack()
+        {
+            if (Navigation != null && Navigation.NavigationStack.Count() > 0)
+            {
+                var existingPages = Navigation.NavigationStack.ToList();
+                foreach (var page in existingPages)
+                {
+                    Navigation.RemovePage(page);
+                }
+            }
         }
     }
 }

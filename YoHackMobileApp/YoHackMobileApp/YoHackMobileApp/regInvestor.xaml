@@ -1,9 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="YoHackMobileApp.regInvestor">
+             x:Class="YoHackMobileApp.regInvestor"
+             Title="Регистрация"
+             >
+
     <ContentPage.Content>
+     <ScrollView>
     <StackLayout>
+        
         <Label
             Text="Регистрация"
             FontSize="Large"
@@ -15,22 +20,28 @@
         <Entry
             Placeholder="Логин"
             Margin="20"
+            x:Name="login"
             />
         <Entry
             Placeholder="Пароль"
             Margin="20"
+            IsPassword="True"
+            x:Name="pass"
             />
         <Entry
             Placeholder="Имя"
             Margin="20"
+            x:Name="name"
             />
         <Entry
             Placeholder="Фамилия"
             Margin="20"
+            x:Name="surname"
             />
         <Picker
             Title="Области"
             Margin="20"
+            x:Name="tag"
             />
         <Button
             Text="Добавить стартапы, в которые вы уже инвестировали" TextColor="Gray" Clicked="AddMore"/>
@@ -41,7 +52,8 @@
             BackgroundColor="Blue"
             Margin="30"
             />  
-        
+       
     </StackLayout>
+    </ScrollView>
     </ContentPage.Content>
 </ContentPage>

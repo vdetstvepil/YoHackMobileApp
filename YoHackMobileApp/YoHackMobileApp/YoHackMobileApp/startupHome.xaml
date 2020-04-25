@@ -30,6 +30,15 @@
         <ListView>
 
         </ListView>
+                <Button
+                Text="+ Добавить раунд"
+                FontSize="Medium"
+                VerticalOptions="End"
+                Clicked="round"
+                BackgroundColor="Blue"
+                TextColor="White"
+                Padding="10"
+                Margin="30"/>
         </StackLayout>
     </ContentPage>
 
