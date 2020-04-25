@@ -8,9 +8,28 @@
 
     <StackLayout>
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
+        
+        <Label Text="K I K O R I K I"
+        Padding="60"
            HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+           VerticalOptions="Center"
+           FontSize="Title"
+           />
+        <Image
+            Source="Assets/question.jpg"/>
+        <Label
+            Text="Кто вы?"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"/>
+        <Button
+            Text="Инвестор"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Clicked="Btn_clicked"/>
+        <Button
+            Text="Стартапер"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"/>
     </StackLayout>
 
 </ContentPage>
