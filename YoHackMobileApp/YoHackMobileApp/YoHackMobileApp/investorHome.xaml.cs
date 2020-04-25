@@ -16,5 +16,14 @@ namespace YoHackMobileApp
         {
             InitializeComponent();
         }
+        async void InvestorRound(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new InvestorRound());
+        }
+        //remove back btn
+        protected override bool OnBackButtonPressed()
+        {
+            return true;
+        }
     }
 }

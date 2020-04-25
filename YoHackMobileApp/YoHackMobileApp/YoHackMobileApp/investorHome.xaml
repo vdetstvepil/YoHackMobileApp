@@ -3,5 +3,62 @@
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             x:Class="YoHackMobileApp.investorHome">
     <!--Pages can be added as references or inline-->
-    <ContentPage Title="searchStartupers" />
+    <ContentPage Title="Поиск">
+        <ContentPage.Content>
+        <StackLayout>
+        
+    <SearchBar Placeholder="Поиск стартаперов"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+    <Button
+        Text="Добавить фильтры"
+        HorizontalOptions="Center"
+        VerticalOptions="Center"/>
+
+    <ListView >
+        
+    </ListView>
+    </StackLayout>
+   </ContentPage.Content>
+    </ContentPage>
+
+                    
+    <ContentPage Title="Раунды">
+        <StackLayout>
+            <Label Text="Ваши раунды" Padding="50" FontSize="Title" HorizontalOptions="Center"/>
+            <Button
+                Text="+ Добавить раунд"
+                FontSize="Medium"
+                VerticalOptions="End"
+                Clicked="InvestorRound"/>
+        </StackLayout>
+   </ContentPage>
+
+    <ContentPage Title="Стартапы">
+        <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Интересные стартапы"
+                   Padding="50"
+                   FontSize="Title"
+                   HorizontalOptions="Center"/>
+        <ListView >
+            
+        </ListView>
+        </StackLayout>
+            </ContentPage.Content>
+    </ContentPage>
+
+
+       <ContentPage Title="Чат">
+           <ContentPage.Content>
+        <StackLayout>
+            <Label
+                Text="Чат"
+                Padding="50"
+                FontSize="Title"
+                HorizontalOptions="Start"/>
+
+        </StackLayout>
+      </ContentPage.Content>
+    </ContentPage>
 </TabbedPage>
