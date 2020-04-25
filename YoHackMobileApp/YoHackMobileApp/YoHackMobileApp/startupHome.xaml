@@ -14,7 +14,7 @@
         Text="Добавить фильтры"
         HorizontalOptions="Center"
         VerticalOptions="Center"/>
-
+    
     <ListView >
         
     </ListView>
@@ -24,28 +24,40 @@
 
 
 
-    <ContentPage Title="Раунды"
-        
-    />
+    <ContentPage Title="Раунды">
+        <StackLayout>
+        <Label Text="Ваши раунды" Padding="50" FontSize="Title" HorizontalOptions="Center" FontAttributes="Bold"/>
+        <ListView>
+
+        </ListView>
+        </StackLayout>
+    </ContentPage>
+
+
     <ContentPage Title="Инвесторы">
-    <StackLayout>
-    <Label Text="Интересные инвесторы"/>
-    <ListView>
-        
-    </ListView>
-    </StackLayout>
+        <StackLayout>
+            <Label Text="Инвесторы"
+                   Padding="50"
+                   FontSize="Title"
+                   HorizontalOptions="Center"
+                   FontAttributes="Bold"/>
+        <ListView >
+            
+        </ListView>
+        </StackLayout>
     </ContentPage>
 
 
 
       <ContentPage Title="Чат">
-           <ContentPage.Content>
+      <ContentPage.Content>
         <StackLayout>
             <Label
                 Text="Чат"
                 Padding="50"
                 FontSize="Title"
-                HorizontalOptions="Start"/>
+                HorizontalOptions="Start"
+                FontAttributes="Bold"/>
 
         </StackLayout>
       </ContentPage.Content>

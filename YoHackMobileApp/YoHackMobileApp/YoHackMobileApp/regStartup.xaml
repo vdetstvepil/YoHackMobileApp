@@ -9,28 +9,55 @@
             FontSize="Large"
             VerticalOptions="Center"
             HorizontalOptions="Start"
-            Padding="50"
+            Padding="30"
+            FontAttributes="Bold"
            />
         <Entry
             Placeholder="Логин"
+            Margin="20"
             />
         <Entry
             Placeholder="Пароль"
+            Margin="20"
             />
         <Entry
             Placeholder="Название стартапа"
-            />
-        <Entry
-            Placeholder="Краткое описание"
+            Margin="20"
             />
         <Picker
-            Title="Области"
+            Title="Стадия" Margin="20">
+            <Picker.ItemsSource>
+            <x:Array Type="{x:Type x:String}">
+            <x:String>Идея</x:String>
+            <x:String>MVP</x:String>
+            <x:String>Первые продажи</x:String>
+            </x:Array>
+            </Picker.ItemsSource>
+            </Picker>
+        <Editor
+            Placeholder="Краткое описание"
+            Margin="20"
             />
-        <Button Text="Файлы"/>
+          <Picker
+            Title="Области" Margin="20">
+            <Picker.ItemsSource>
+            <x:Array Type="{x:Type x:String}">
+            <x:String>UI</x:String>
+            <x:String>UX</x:String>
+            <x:String>Бизнес</x:String>
+            </x:Array>
+            </Picker.ItemsSource>
+            </Picker>
+        <Button Text="Добавить файлы" Margin="20" />
+        <Button
+            Text="Добавить стартапы, в которые вы уже инвестировали" TextColor="Gray" Clicked="Add"/>
         <Button
             Text="Сохранить"
+            TextColor="White"
             Clicked="Next"
-            />
+            BackgroundColor="Blue"
+            Margin="30"
+            />  
         
         </StackLayout>
     </ContentPage.Content>
