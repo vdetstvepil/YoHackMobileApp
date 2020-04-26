@@ -11,12 +11,13 @@
                HorizontalOptions="Center"
                VerticalOptions="Center"
                x:Name="search"
+               
                />
     <Button
         Text="Добавить фильтры"
         HorizontalOptions="Center"
         VerticalOptions="Center"/>
-    <ListView>
+    <ListView ItemsSource="{Binding investors}">
         
     </ListView>
     </StackLayout>

@@ -18,7 +18,7 @@ namespace YoHackMobileApp
             SendToDB.sendToDB("INSERT INTO \"investor_tags\"" +
                 $"(\"login_investor\", \"tag_text\") VALUES ('{login.Text}', '{tag.SelectedItem}');");
 
-
+            Data.invLogin = login.Text;
             SendToDB.sendToDB("INSERT INTO \"investor\" " +
                         "(\"login_investor\", \"pass\", \"name_investor\", \"surname_investor\")" +
                         $"VALUES ('{name.Text}', '{surname.Text}', '{login.Text}', '{pass.Text}');");
