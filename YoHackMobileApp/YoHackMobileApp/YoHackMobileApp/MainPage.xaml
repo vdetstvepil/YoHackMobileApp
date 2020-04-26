@@ -17,7 +17,6 @@
            />
         <Label
             Text="Кто вы?"
-            BackgroundColor="DarkBlue"
             HorizontalOptions="Center"
             VerticalOptions="Center"
             FontSize="Large"
@@ -28,23 +27,32 @@
             HorizontalOptions="Center"
             VerticalOptions="Center"
             Clicked="Investor"
+            BackgroundColor="LightBlue"
+            Padding="10"
+            TextColor="White"
             />
         <Button
             Text="Стартапер"
             HorizontalOptions="Center"
             VerticalOptions="Center"
-            Clicked="Startup"/>
+            Clicked="Startup"
+            BackgroundColor="LightBlue"
+            Padding="10"
+            TextColor="White"/>
         <Label Text="Есть аккаунт? Войдите"
                HorizontalOptions="Center"
                VerticalOptions="Center"
                TextColor="Gray"/>
-        <Entry Placeholder="Логин" Margin="20"/>
-        <Entry Placeholder="Пароль" IsPassword="True" Margin="20"/>
+        <Entry Placeholder="Логин" Margin="20" x:Name="existingLogin"/>
+        <Entry Placeholder="Пароль" IsPassword="True" Margin="20" x:Name="existingPass"/>
+        <Switch IsToggled="False" x:Name="isInvestor" Margin="30"/>
+        <Label Text="Вы инвестор?" Margin="30,0,0,0"/>
            <Button
             Text="Сохранить"
             TextColor="White"
             BackgroundColor="Blue"
             Margin="30"
+            Clicked="Save"
             />
 
     </StackLayout>

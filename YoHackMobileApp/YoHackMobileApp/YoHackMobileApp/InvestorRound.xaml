@@ -6,14 +6,23 @@
     <StackLayout Margin="0,200,0,0">
         <Label Text="Раунд" HorizontalOptions="Center" VerticalOptions="Start" FontSize="Title" FontAttributes="Bold"/>
         <Entry
-            Placeholder="Сумма инвестиций" Margin="30"/>
-        <Entry Placeholder="Стадия стартапа" Margin="30"/>
-        <Editor Placeholder="Условия инвестиций" Margin="30"/>
+            Placeholder="Сумма инвестиций" Margin="30" x:Name="sum"/>
+            <Picker
+            Title="Стадии" Margin="20" x:Name="stage">
+            <Picker.ItemsSource>
+            <x:Array Type="{x:Type x:String}">
+            <x:String>Idea</x:String>
+            <x:String>MVP</x:String>
+            <x:String>First sales</x:String>
+            </x:Array>
+            </Picker.ItemsSource>
+            </Picker>
+        <Editor Placeholder="Условия инвестиций" Margin="30" x:Name="condition"/>
         <Button
             Text="Создать"
             BackgroundColor="Blue"
             Padding="10"
-            Clicked="Back"
+            Clicked="Create"
             TextColor="White"
             Margin="30"
         />

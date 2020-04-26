@@ -9,12 +9,14 @@
         
     <SearchBar Placeholder="Поиск стартапов"
                HorizontalOptions="Center"
-               VerticalOptions="Center"/>
+               VerticalOptions="Center"
+               x:Name="search"
+               />
     <Button
         Text="Добавить фильтры"
         HorizontalOptions="Center"
         VerticalOptions="Center"/>
-    <ListView >
+    <ListView>
         
     </ListView>
     </StackLayout>
@@ -25,9 +27,9 @@
     <ContentPage Title="Раунды">
         <StackLayout>
             <Label Text="Ваши раунды" Padding="50" FontSize="Title" HorizontalOptions="Center" FontAttributes="Bold"/>
-            <ListView>
+            
+            <ListView ItemsSource="{Binding rounds}"/>
 
-            </ListView>
             <Button
                 Text="+ Добавить раунд"
                 FontSize="Medium"
