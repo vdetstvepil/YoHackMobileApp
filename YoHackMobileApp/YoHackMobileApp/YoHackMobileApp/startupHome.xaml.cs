@@ -20,5 +20,11 @@ namespace YoHackMobileApp
         {
             await Navigation.PushModalAsync(new StartupRound());
         }
+        void OnTextChanged(object sender, EventArgs e)
+        {
+            List<string> list = new List<string>();
+           list = SendToDB.GetInvestors($"SELECT \"{search.Text}\" FROM \"investor\"");
+            foreach (string i in list) Console.WriteLine(list);
+        }
     }
 }

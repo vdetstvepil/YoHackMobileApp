@@ -9,7 +9,9 @@
         
     <SearchBar Placeholder="Поиск инвесторов"
                HorizontalOptions="Center"
-               VerticalOptions="Center"/>
+               VerticalOptions="Center"
+               TextChanged="OnTextChanged"
+               x:Name="search"/>
     <Button
         Text="Добавить фильтры"
         HorizontalOptions="Center"

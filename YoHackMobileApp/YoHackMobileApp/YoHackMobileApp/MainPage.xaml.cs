@@ -25,6 +25,21 @@ namespace YoHackMobileApp
         {
             await Navigation.PushAsync(new regStartup());
         }
-
+        async void  Save(object sender, EventArgs e)
+        {
+            var temp = isInvestor.IsToggled;
+            if(temp == true)
+            {
+                 Data.invLogin = existingLogin.Text;
+                await Navigation.PushAsync(new investorHome());
+            }
+            else
+            {
+                Data.startupdLogin = existingLogin.Text;
+                await Navigation.PushAsync(new startupHome());
+            }
+           
+            
+        }
     }
 }

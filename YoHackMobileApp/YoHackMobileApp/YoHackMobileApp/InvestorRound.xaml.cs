@@ -15,5 +15,12 @@ namespace YoHackMobileApp
         {
             await Navigation.PopModalAsync();
         }
+        async void Create(object sender, EventArgs args)
+        {
+            SendToDB.sendToDB("INSERT INTO round_ss " +
+                "(\"login_investor\", \"stage\", \"sum_money\", \"conditions\") " +
+                $"VALUES ('{Data.invLogin}', '{stage.SelectedItem}',{sum.Text}, '{condition.Text}');");
+            await Navigation.PopModalAsync();
+        }
     }
 }
